@@ -32,10 +32,18 @@ overlayBlog.addEventListener('click', function() {
 });
 
 
+// Submenu Mobile
+const menuHoverMobile = document.querySelector('.menuHoverMobile');
+const submenuMobile = document.querySelector('.submenuCompareMobile');
+
+menuHoverMobile.addEventListener('click', function(event) {
+    event.preventDefault();
+    submenuMobile.classList.toggle('showMenuMobile');
+});
+
 // Menu Mobile
 const abrirMenu = document.getElementById('openMenu');
 const fecharMenu = document.getElementById('closeMenu');
-
 
 function openMenu(){
     document.documentElement.classList.add('menuOpened')

@@ -99,6 +99,12 @@ header{
     pointer-events: all !important;
 }
 
+.showMenuMobile{
+    opacity: 1 !important;
+    pointer-events: all !important;
+    display: block !important;
+}
+
 .overlayCompare, .overlayBlog{
     position: fixed;
     top: 0;
@@ -292,6 +298,52 @@ header{
     transform: translateX(0%);
 }
 
+@media screen and (max-width: 1090px){
+    .headerContainer .submenuCompare, .headerContainer .submenuBlog{
+        max-width: 90rem;
+    }
+    .headerContainer .submenuCompare li a .title h6{
+        font-size: 1.8rem;
+    }
+    .headerContainer .submenuCompare li a img{
+        width: 20.1rem;
+        height: 10.4rem;
+        border-radius: 8px;
+    }
+
+    /* Submenu Blog */
+    .headerContainer .submenuBlog{
+        height: 35.6rem;
+        max-width: 100rem;
+    }
+    .headerContainer .submenuBlog .navLeft{
+        max-width: 20rem;
+    }
+    .headerContainer .submenuBlog .navLeft h5, .headerContainer .submenuBlog .navRight h5{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    /* NavRight */
+    .headerContainer .submenuBlog .navRight .articlesContent{
+        gap: 1rem;
+    }
+    .headerContainer .submenuBlog .navRight .articlesContent .boxArticle{
+        padding: 1rem;
+        max-width: 54.4rem;
+    }
+    .headerContainer .submenuBlog .navRight .articlesContent .boxArticle a img{
+        width: 8rem;
+        height: 8rem;
+        margin-right: 2rem;
+    }
+    .headerContainer .submenuBlog .navRight .articlesContent .boxArticle a .texts h4{
+        font-size: 1.5rem;
+    }
+    .headerContainer .submenuBlog .navRight .articlesContent .boxArticle a .texts p{
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width: 991px){
     .headerContainer .contentHeader{
         height: 6rem;
@@ -306,5 +358,42 @@ header{
     }
     .headerContainer .contentHeader nav, .headerContainer .contentHeader .buttons{
         display: none;
+    }
+    .menuMobile aside nav ul .menuHoverMobile{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .menuMobile aside nav ul .menuHoverMobile  .submenuCompareMobile{
+        opacity: 0;
+        pointer-events: none;
+        display: none;
+    }
+    .menuMobile aside nav ul .menuHoverMobile .submenuCompareMobile li a{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .menuMobile aside nav ul .menuHoverMobile .submenuCompareMobile li a .title h6{
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+    }
+    .menuMobile aside nav ul .menuHoverMobile .submenuCompareMobile li a .title span{
+        font-size: 1.2rem;
+        color: var(--colorGreen);
+        background: #E8F2EE;
+        padding: .6rem .8rem;
+        border-radius: 6px;
+        margin-left: .8rem;
+    }
+    .menuMobile aside nav ul .menuHoverMobile .submenuCompareMobile li a p{
+        font-size: 1.4rem;
+        color: #1a191e73;
+        margin-bottom: 1rem;
+    }
+    .menuMobile aside nav ul .menuHoverMobile .submenuCompareMobile li a img{
+        width: 20.1rem;
+        height: 12.4rem;
+        border-radius: 8px;
     }
 }
