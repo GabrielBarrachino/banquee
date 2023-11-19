@@ -1,0 +1,14 @@
+.headerContainer{
+    width: 100%;
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}

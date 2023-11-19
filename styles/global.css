@@ -1,0 +1,87 @@
+:root{
+    --fontInter: 'Inter', sans-serif;
+    --fontDm: 'DM Sans', sans-serif;
+
+    --colorTextDefault: #1A191E;
+    --colorGreen: #5BB5A2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontInter);
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body, a{
+    color: var(--colorTextDefault);
+}
+
+button{
+    display: block;
+    background: transparent;
+    border: none;
+}
+
+/* Classes geral */
+.flexBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.logo h4{
+    font-size: 3.2rem;
+    font-family: var(--fontDm);
+    font-weight: bold;
+    color: var(--colorGreen);
+}
+
+.buttons .btnLogin{
+    color: var(--colorGreen);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: var(--fontDm);
+    font-weight: 500;
+    padding: .9rem;
+    transition: all .4s;
+}
+
+.buttons .btnLogin:hover{
+    color: #408173;
+}
+
+.buttons .btnOpen{
+    background: var(--colorGreen);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: var(--fontDm);
+    font-weight: 500;
+    padding: 1.2rem 1.6rem;
+    border-radius: 6px;
+    transition: all .2s;
+}
+
+.buttons .btnOpen:hover{
+    background: #408173;
+    transition: all .4s;
+}

@@ -1,0 +1,310 @@
+:root{
+    --fontInter: 'Inter', sans-serif;
+    --fontDm: 'DM Sans', sans-serif;
+
+    --colorTextDefault: #1A191E;
+    --colorGreen: #5BB5A2;
+    --colorGray: #f8f8f8;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.headerContainer .contentHeader{
+    height: 9.1rem;
+}
+
+.headerContainer .contentHeader .btnMobile{
+    display: none;
+}
+
+.headerContainer .contentHeader nav ul li a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all .4s;
+    padding: .8rem 1.2rem;
+    border-radius: 6px;
+}
+
+.headerContainer .contentHeader nav ul li a .arrowDropDown{
+    width: 100%;
+    max-width: 2.4rem;
+    height: 2.4rem;
+    transition: all .4s;
+}
+
+.headerContainer .contentHeader nav ul li a:hover .arrowDropDown{
+    transform: rotate(180deg);
+}
+
+.headerContainer .contentHeader nav ul li a:hover{
+    background-color: var(--colorGray);
+}
+
+.headerContainer .contentHeader nav ul li:not(:last-child){
+    margin-right: 3rem;
+}
+
+.headerContainer .contentHeader .buttons{
+    gap: 3.2rem;
+}
+
+.headerContainer .submenuCompare, .headerContainer .submenuBlog{
+    background-color: var(--colorGray);
+    padding: 5rem;
+    position: absolute;
+    width: 100%;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: start;
+    max-width: 100rem;
+}
+.headerContainer .submenuCompare li{
+    margin: 0 auto;
+}
+.headerContainer .submenuCompare li a .title{
+     gap: .8rem;
+     margin-bottom: .6rem;
+}
+.headerContainer .submenuCompare li a .title h6{
+    font-size: 2rem;
+}
+.headerContainer .submenuCompare li a .title span{
+    font-size: 1.2rem;
+    color: var(--colorGreen);
+    background: #E8F2EE;
+    padding: .6rem .8rem;
+    border-radius: 6px;
+}
+.headerContainer .submenuCompare li a p{
+    font-size: 1.4rem;
+    color: #1a191e73;
+    margin-bottom: 1.6rem;
+}
+.headerContainer .submenuCompare li a img{
+    width: 24.1rem;
+    height: 14.4rem;
+}
+
+.showMenu{
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+.overlayCompare, .overlayBlog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: -100;
+}
+
+/* Submenu Blog */
+.headerContainer .submenuBlog{
+    height: 39.6rem;
+    max-width: 130rem;
+}
+
+.headerContainer .submenuBlog .navLeft{
+    max-width: 28rem;
+    width: 100%;
+}
+
+.headerContainer .submenuBlog .navLeft h5, .headerContainer .submenuBlog .navRight h5{
+    font-size: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.headerContainer .submenuBlog .navLeft ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.headerContainer .submenuBlog .navLeft ul li a{
+    color: rgba(27, 26, 31, 0.5);
+    font-size: 1.6rem;
+    transition: all .4s;
+    font-weight: 500;
+}
+
+.headerContainer .submenuBlog .navLeft ul li a:hover{
+    color: var(--colorGreen);
+}
+
+.headerContainer .submenuBlog .navLeft ul li .allArticles{
+    display: flex;
+    align-items: center;
+    color: var(--colorGreen);
+    margin-top: 3.2rem;
+}
+
+.headerContainer .submenuBlog .navLeft ul li .allArticles span{
+    margin-right: .8rem;
+}
+
+.headerContainer .submenuBlog .navLeft ul li .allArticles img{
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all .4s;
+}
+
+.headerContainer .submenuBlog .navLeft ul li .allArticles:hover img{
+    transform: translateX(30%);
+}
+
+/* NavRight */
+.headerContainer .submenuBlog .navRight .articlesContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.headerContainer .submenuBlog .navRight .articlesContent .boxArticle{
+    border-radius: 6px;
+    padding: 1.2rem;
+    max-width: 54.4rem;
+    transition: all .4s;
+}
+
+.headerContainer .submenuBlog .navRight .articlesContent .boxArticle:hover{
+    background: #fff;
+}
+
+.headerContainer .submenuBlog .navRight .articlesContent .boxArticle a img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2.4rem;
+}
+
+.headerContainer .submenuBlog .navRight .articlesContent .boxArticle a .texts h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.headerContainer .submenuBlog .navRight .articlesContent .boxArticle a .texts p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(27, 26, 31, 0.5);
+    margin-top: .8rem;
+}
+
+
+/* Menu Mobile */
+.menuMobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2222;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.menuMobile aside{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background: #fff;
+    transform: translateX(100%);
+    transition: transform .4s;
+    z-index: 200;
+}
+
+.menuMobile aside .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuMobile aside nav{
+    margin: 4rem 0;
+}
+
+.menuMobile aside nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.menuMobile aside nav ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all .4s;
+    padding: .8rem 1.2rem;
+    border-radius: 6px;
+}
+
+.menuMobile aside nav ul li:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.menuMobile aside nav ul li a .arrowDropDown{
+    width: 100%;
+    max-width: 2.4rem;
+    height: 2.4rem;
+    transition: all .4s;
+}
+
+.menuMobile aside nav ul li a:hover .arrowDropDown{
+    transform: rotate(180deg);
+}
+
+.menuMobile aside nav ul li a:hover{
+    background-color: var(--colorGray);
+}
+
+.menuMobile aside nav ul li:not(:last-child){
+    margin-right: 3rem;
+}
+
+.menuMobile aside .buttons{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuOpened{
+    overflow: hidden;  
+}
+.menuOpened .menuMobile{
+    opacity: 1;
+    pointer-events: all; 
+}
+.menuOpened .menuMobile aside{
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 991px){
+    .headerContainer .contentHeader{
+        height: 6rem;
+    }
+    .headerContainer .contentHeader .logo h4, .menuMobile .logo h4{
+        font-size: 2rem;
+    }
+    .headerContainer .contentHeader .btnMobile{
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    .headerContainer .contentHeader nav, .headerContainer .contentHeader .buttons{
+        display: none;
+    }
+}
