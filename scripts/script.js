@@ -39,6 +39,20 @@ const submenuMobile = document.querySelector('.submenuCompareMobile');
 menuHoverMobile.addEventListener('click', function(event) {
     event.preventDefault();
     submenuMobile.classList.toggle('showMenuMobile');
+    if (submenuMobile.classList.contains('showMenuMobile')) {
+        submenuBlogMobile.classList.remove('showMenuMobile');
+    }
+});
+
+const menuHoverBlogMobile = document.querySelector('.menuHoverBlogMobile');
+const submenuBlogMobile = document.querySelector('.submenuBlogMobile');
+
+menuHoverBlogMobile.addEventListener('click', function(event) {
+    event.preventDefault();
+    submenuBlogMobile.classList.toggle('showMenuMobile');
+    if (submenuBlogMobile.classList.contains('showMenuMobile')) {
+        submenuMobile.classList.remove('showMenuMobile');
+    }
 });
 
 // Menu Mobile
