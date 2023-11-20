@@ -1,0 +1,136 @@
+:root{
+    --fontInter: 'Inter', sans-serif;
+    --fontDm: 'DM Sans', sans-serif;
+
+    --colorTextDefault: #1A191E;
+    --colorGreen: #5BB5A2;
+    --colorGray: #f8f8f8;
+}
+
+
+.sHome{
+    padding-top: 20.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sHome .contentLeft h1{
+    font-size: 8rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+
+.sHome .contentLeft p{
+    font-size: 2rem;
+    line-height: 150%;
+    margin-bottom: 3.2rem;
+}
+
+.sHome .contentLeft .list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 6.4rem;
+    grid-gap: 1.6rem;
+}
+
+.sHome .contentLeft .list .flex{
+    gap: 1.6rem;
+}
+
+.sHome .contentLeft .list .flex img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.sHome .contentLeft .list .flex span{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.sHome .contentLeft .buttons{
+    gap: 3.2rem;
+}
+
+.sHome .contentLeft .buttons .allArticles{
+    gap: .6rem;
+}
+
+.sHome .contentLeft .buttons .allArticles span{
+    color: var(--colorGreen);
+    font-size: 1.6rem;
+}
+
+.sHome .contentLeft .buttons .allArticles img{
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all .4s;
+}
+
+.sHome .contentLeft .buttons .allArticles:hover img{
+    transform: translateX(30%)
+}
+
+@media (max-width: 991px){
+    .sHome{
+        padding-top: 16rem;
+    }
+    .sHome .contentLeft h1{
+        font-size: 5rem;
+    }
+    .sHome .contentLeft p{
+        font-size: 1.7rem;
+    }
+    .sHome .contentLeft .list{
+        margin-bottom: 4rem;
+    }
+    .sHome .contentLeft .list .flex span{
+        font-size: 1.5rem;
+    }
+    .sHome .contentLeft .buttons{
+        gap: 3rem;
+    }
+    .sHome .contentRight {
+        max-width: 30rem;
+        height: 47.8rem;
+    }
+}
+
+@media (max-width: 750px){
+    .sHome{
+        justify-content: center;
+        text-align: center;
+    }
+    .sHome .contentLeft .buttons{
+        justify-content: center;
+    }
+    .sHome .contentRight {
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .sHome{
+        padding-top: 12rem;
+    }
+    .sHome .contentLeft h1{
+        font-size: 3.5rem;
+    }
+    .sHome .contentLeft p{
+        font-size: 1.2rem;
+    }
+    .sHome .contentLeft .list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sHome .contentLeft .list .flex span{
+        font-size: 1.3rem;
+    }
+    .sHome .contentLeft .list .flex img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .sHome .contentLeft .buttons{
+        gap: 3rem;
+        flex-direction: column;
+    }
+}
