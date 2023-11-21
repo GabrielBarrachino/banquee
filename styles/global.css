@@ -85,3 +85,15 @@ button{
     background: #408173;
     transition: all .4s;
 }
+
+.titleSection{
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 6.4rem;
+}
+
+.pTitleSection{
+    font-size: 1.6rem;
+    line-height: 150%;
+    max-width: 56rem;
+}

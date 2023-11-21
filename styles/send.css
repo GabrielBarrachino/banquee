@@ -1,0 +1,92 @@
+:root{
+    --fontInter: 'Inter', sans-serif;
+    --fontDm: 'DM Sans', sans-serif;
+
+    --colorTextDefault: #1A191E;
+    --colorGreen: #5BB5A2;
+    --colorGray: #f8f8f8;
+}
+
+.sSend{
+    background-color: #5bb5a252;
+    margin-top: 16rem;
+    padding-top: 12.8rem;
+    height: 63.6rem;
+    overflow: hidden;
+    margin-bottom: 8rem;
+}
+
+.sSend .container{
+    align-items: start;
+}
+
+.sSend .container .contentLeft .titleSection{
+    margin-bottom: 1rem;
+}
+
+.sSend .container .sends .send{
+    gap: 1.6rem;
+    margin-top: 3rem;
+}
+
+.sSend .container .sends .send:not(:last-child){
+    margin-bottom: 1.2rem;
+}
+
+.sSend .container .sends .send img{
+    max-width: 2.6rem;
+    height: 2.6rem;
+}
+
+.sSend .container .sends .send span{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+@media (max-width: 991px){
+    .sSend .container .contentLeft .titleSection{
+       font-size: 4rem;
+    }
+    .sSend .container .contentLeft .pTitleSection{
+        font-size: 1.4rem;
+        max-width: 50rem;
+    }
+    .sSend .container .sends .send{
+        gap: 1rem;
+    }
+    .sSend .container .sends .send img{
+        max-width: 2rem;
+        height: 2rem;
+    }
+    .sSend .container .sends .send span{
+        font-size: 1.4rem;
+    }
+    .sSend .container .contentRight img{
+        height: 60rem;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 800px){
+    .sSend .container{
+        text-align: center;
+        justify-content: center;
+    }
+    .sSend .container .sends .send{
+        justify-content: center;
+    }
+    .sSend .container .contentRight img{
+        display: none;
+    }
+}
+
+@media (max-width: 460px){
+    .sSend{
+        margin-top: 9rem;
+        height: 53.6rem;
+    }
+    .sSend .container .contentLeft .titleSection{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}

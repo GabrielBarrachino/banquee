@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="styles/container.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/oneapp.css">
+    <link rel="stylesheet" href="styles/send.css">
     <title>Banquee | Home page</title>
 </head>
 <body>
-    <header>
+    <header id="jsHeader">
         <div class="headerContainer">
             <div class="contentHeader flexBetween">
                 <div class="logo">
@@ -261,47 +263,109 @@
         </aside>
     </div>
 
-    <main class="container">
-        <section class="sHome">
-            <div class="contentLeft">
-                <h1>Banking<br> starts here.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing<br> elit. Fuga omnis ab aliquam incidunt harum!</p>
-                <div class="list">
-                    <span class="flex">
-                        <img src="./assets/badge.svg" alt="">
-                        <span>Instant Transfer</span>
-                    </span>
-                    <span class="flex">
-                        <img src="./assets/badge.svg" alt="">
-                        <span>Payments worldwide</span>
-                    </span>
-                    <span class="flex">
-                        <img src="./assets/badge.svg" alt="">
-                        <span>Saving accounts</span>
-                    </span>
-                    <span class="flex">
-                        <img src="./assets/badge.svg" alt="">
-                        <span>100% mobile banking</span>
-                    </span>
+    <section class="sHome container">
+        <div class="contentLeft">
+            <h1>Banking<br> starts here.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing<br> elit. Fuga omnis ab aliquam incidunt harum!</p>
+            <div class="list">
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Instant Transfer</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Payments worldwide</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Saving accounts</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>100% mobile banking</span>
+                </span>
+            </div>
+            <div class="buttons flex"> 
+                <button class="btn btnOpen">Open Account</button>
+                <a href="#" class="allArticles flex">
+                    <span>Compare Cards</span>
+                    <img src="./assets/arrowRight.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="contentRight">
+            <img src="./assets/cardsHome.svg" alt="">
+        </div>
+    </section>
+
+    <section class="sOneApp flexBetween container">
+        <div class="contentLeft">
+            <h2 class="titleSection">One app.<br> One banking.</h2>
+            <div class="cardsContainer">
+                <div class="boxCard">
+                    <img src="./assets/badgeFlash.svg" alt="" class="badges">
+                    <h5>Instant<br> Transactions</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores.</p>
                 </div>
-                <div class="buttons flex"> 
-                    <button class="btn btnOpen">Open Account</button>
-                    <a href="#" class="allArticles flex">
-                        <span>Compare Cards</span>
-                        <img src="./assets/arrowRight.svg" alt="">
-                    </a>
+                <div class="boxCard">
+                    <img src="./assets/badgeSaving.svg" alt="" class="badges">
+                    <h5>Saving<br> accounts</h5> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores.</p>
+                </div>
+                <div class="boxCard">
+                    <img src="./assets/badgeMobile.svg" alt="" class="badges">
+                    <h5>Mobile<br>banking</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores.</p>
+                </div>
+                <div class="boxCard">
+                    <img src="./assets/badgeStatistic.svg" alt="" class="badges">
+                    <h5>Advanced<br> statistics</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores.</p>
+                </div>
+                <div class="boxCard">
+                    <img src="./assets/badgeCards.svg" alt="" class="badges">
+                    <h5>Virtual<br>cards</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores.</p>
+                </div>
+                <div class="boxCard">
+                    <img src="./assets/badgeWifi.svg" alt="" class="badges">
+                    <h5>Contactless<br> payments</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contentRight">
+            <img src="./assets/app.svg" alt="">
+        </div>
+    </section>
+
+    <section class="sSend">
+        <div class="container flexBetween">
+            <div class="contentLeft">
+                <h2 class="titleSection">Send & receive<br> money instantly</h2>
+                <p class="pTitleSection">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nulla nemo corrupti quasi dolores debitis.</p>
+                <div class="sends">
+                    <div class="send flex">
+                        <img src="./assets/badgeSend.svg" alt="">
+                        <span>Lorem, ipsum dolor.</span>
+                    </div>
+                    <div class="send flex">
+                        <img src="./assets/badgeSend.svg" alt="">
+                        <span>Lorem, ipsum.</span>
+                    </div>
+                    <div class="send flex">
+                        <img src="./assets/badgeSend.svg" alt="">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
                 </div>
             </div>
             <div class="contentRight">
-                <img src="./assets/cardsHome.svg" alt="">
+                <img src="./assets/transactions.svg" alt="">
             </div>
-        </section>
-
-        <section class="sOneApp">
-            
-        </section>
-    </main>
+        </div>
+    </section>
 
     <script src="scripts/menus.js"></script>
+    <script src="scripts/menusFixo.js"></script>
 </body>
 </html>
