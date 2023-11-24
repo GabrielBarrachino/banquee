@@ -6,6 +6,11 @@
     --colorGreen: #5BB5A2;
 }
 
+::selection{
+    background: var(--colorGreen);
+    color: #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
