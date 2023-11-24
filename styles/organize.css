@@ -1,0 +1,187 @@
+:root{
+    --fontInter: 'Inter', sans-serif;
+    --fontDm: 'DM Sans', sans-serif;
+
+    --colorTextDefault: #1A191E;
+    --colorGreen: #5BB5A2;
+    --colorGray: #f8f8f8;
+}
+
+.sOrganize{
+    margin: 16rem auto;
+}
+
+.sOrganize .top{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+
+.sOrganize .top .texts span, .sStay .left .texts span{
+    font-size: 1.8rem;
+    padding-bottom: 1.6rem;
+    margin-left: .5rem;
+}
+
+.sOrganize .top .texts .titleSection, .sStay .left .texts .titleSection, .sSeemless .titleSection{
+    margin-bottom: 1.6rem;
+}
+.sOrganize .top .texts .pTitleSection, .sStay .left .texts .pTitleSection, .sSeemless .pTitleSection{
+    line-height: 180%;
+}
+
+.sOrganize .top .allArticles{
+    margin-top: 3.2rem;
+}
+
+.sOrganize .top .allArticles span{
+    margin-right: .8rem;
+}
+
+.sOrganize .top .allArticles img{
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all .4s;
+}
+
+.sOrganize .top .allArticles:hover img{
+    transform: translateX(30%);
+}
+
+.sOrganize .bottom{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3.3rem;
+}
+
+.sOrganize .bottom .cardBox{
+    width: 100%;
+    max-width: 21.4rem;
+    height: 28rem;
+}
+
+.sOrganize .bottom .cardBox p{
+    margin: 1.6rem 0 .8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.sOrganize .bottom .cardBox span{
+    color: rgba(27, 26, 31, 0.842);
+    font-size: 1.4rem;
+}
+
+.sOrganize .bottom .cardBoxLink{
+    background-color: var(--colorGray);
+    border-radius: 16px;
+    height: 21.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+}
+
+.sOrganize .bottom .cardBoxLink img{
+    max-width: 5rem;
+    height: 5rem;
+}
+
+.sOrganize .bottom .cardBoxLink:hover{
+    transform: scale(1.1);
+}
+
+/* Stay section */
+.sStay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+}
+.sStay .left .texts{
+    margin-bottom: 3.2rem;
+}
+
+.sStay .left .list{
+    margin-bottom: 4.6rem;
+}
+
+.sStay .left .list span, .sSeemless span{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sStay .left .list .flex:not(:last-child){
+    margin-bottom: 1.8rem;
+}
+
+.sStay .left .list .flex img, .sSeemless .list img{
+    max-width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.2rem;
+}
+
+.sStay .right img{
+    max-width: 49.8rem;
+    height: 47.3rem;
+}
+
+.sStay .left .allArticles span{
+    margin-right: .8rem;
+}
+
+/* Seemless section */
+.sSeemless{
+    margin-bottom: 16rem;
+}
+.sSeemless .logos{
+    margin-bottom: 6.4rem;
+}
+
+.sSeemless .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.sSeemless .logos img{
+    max-width: 72.2rem;
+    height: 13.6rem;
+}
+
+.sSeemless .list{
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 34.5rem;
+}
+
+.sSeemless .list span{
+    display: flex;
+    align-items: center;
+}
+
+.sSeemless .list .flex:not(:last-child){
+    margin-bottom: 1.8rem;
+}
+
+@media (max-width: 991px){
+    .sOrganize .bottom{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    .sOrganize .bottom .cardBoxLink{
+        display: none;
+    }
+    .titleSection{
+        font-size: 4rem;
+    }
+    .pTitleSection{
+        font-size: 1.4rem;
+        max-width: 45rem;
+    }
+    .sStay .right img{
+        max-width: 45.8rem;
+        height: 43.3rem;
+        object-fit: contain;
+    }
+}

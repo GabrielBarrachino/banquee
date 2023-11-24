@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/oneapp.css">
     <link rel="stylesheet" href="styles/send.css">
+    <link rel="stylesheet" href="styles/organize.css">
     <title>Banquee | Home page</title>
 </head>
 <body>
@@ -365,7 +366,132 @@
         </div>
     </section>
 
+    <section class="sOrganize container">
+        <div class="top">
+            <div class="texts">
+                <span>Saving Accounts</span>
+                <h2 class="titleSection">Organize your<br> money the right way</h2>
+                <p class="pTitleSection">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a href="#" class="allArticles flex">
+                <span>All Features</span>
+                <img src="./assets/arrowRight.svg" alt="">
+            </a>
+        </div>
+        <div class="bottom">
+            <div class="cardBox">
+                <img src="./assets/laptop.svg" alt="">
+                <p>New Laptop</p>
+                <span>400$</span>
+            </div>
+            <div class="cardBox">
+                <img src="./assets/bike.svg" alt="">
+                <p>Dream bike</p>
+                <span>200$</span>
+            </div>
+            <div class="cardBox">
+                <img src="./assets/airplane.svg" alt="">
+                <p>Holiday</p>
+                <span>1400$</span>
+            </div>
+            <div class="cardBox">
+                <img src="./assets/camera.svg" alt="">
+                <p>Camera</p>
+                <span>100$</span>
+            </div>
+            <a href="#" target="_blank" class="cardBox cardBoxLink">
+                <img src="./assets/plus.svg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section class="sStay container">
+        <div class="left">
+            <div class="texts">
+                <span>Notifications</span>
+                <h2 class="titleSection">Stay notified</h2>
+                <p class="pTitleSection">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+
+            <div class="list">
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Instant Transfer</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Payments worldwide</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Saving accounts</span>
+                </span>
+            </div>            
+
+            <a href="#" class="allArticles flex">
+                <span>Compare Cards</span>
+                <img src="./assets/arrowRight.svg" alt="">
+            </a>
+        </div>
+        <div class="right">
+            <img src="./assets/grid.svg" alt="">
+        </div>
+    </section>
+
+    <section class="sSeemless container">
+        <div class="logos">
+            <img src="./assets/gridLogo.svg" alt="">
+        </div>
+        <div class="bottom">
+            <div class="texts">
+                <span>Tools</span>
+                <h2 class="titleSection">Seemless <br>integration</h2>
+                <p class="pTitleSection">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                
+            </div>
+            <div class="list">
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Secure and encrypted integration</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Fully API interface</span>
+                </span>
+                <span class="flex">
+                    <img src="./assets/badge.svg" alt="">
+                    <span>Payments worldwide</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container buttons">
+        <button class="btnOpen" id="btnEnviarAlguem">Compartilhar site</button>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
     <script src="scripts/menus.js"></script>
     <script src="scripts/menusFixo.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const btnEnviarParaAlguem = document.getElementById('btnEnviarAlguem');
+        const urlImovel = window.location.href;
+    
+        btnEnviarParaAlguem.addEventListener('click', function () {
+                if (navigator.share) {
+                    const titlePag = document.title;
+                    navigator.share({
+                        title: titlePag,
+                        text: 'Confira este banco online que encontrei!',
+                        url: urlImovel
+                    })
+                } 
+            });
+        });
+    </script>
 </body>
 </html>

@@ -97,3 +97,24 @@ button{
     line-height: 150%;
     max-width: 56rem;
 }
+
+
+.allArticles{
+    display: flex;
+    align-items: center;
+    color: var(--colorGreen);
+}
+
+.allArticles span{
+    font-size: 1.6rem;
+}
+
+.allArticles img{
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all .4s;
+}
+
+.allArticles:hover img{
+    transform: translateX(30%);
+}
