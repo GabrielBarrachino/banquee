@@ -184,6 +184,17 @@
         height: 43.3rem;
         object-fit: contain;
     }
+    .sSeemless{
+        margin-top: -5rem;
+    }
+    .sSeemless .logos{
+        margin-bottom: 3.4rem;
+    }
+    .sSeemless .logos img{
+        max-width: 52.2rem;
+        height: 13.6rem;
+        object-fit: contain;
+    }
 }
 
 @media (max-width: 620px){
@@ -203,6 +214,38 @@
     }
     .sOrganize .top .texts span, .sStay .left .texts span{
         font-size: 1.4rem;
+    }
+    .sStay{
+        justify-content: center;
+        text-align: center;
+        margin-top: -3rem;
+    }
+    .sStay .left a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sStay .right{
+        display: none;
+    }
+    .sSeemless{
+        margin-top: -7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sSeemless .logos{
+        margin-bottom: 3rem;
+    }
+    .sSeemless .logos img{
+        max-width: 42.2rem;
+    }
+    .sSeemless .bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -228,4 +271,9 @@
     .sOrganize .bottom {
         gap: 1.3rem 2rem;
     }
+    .sStay{
+        margin-top: -4rem;
+        margin-bottom: 8rem;
+    }
 }
+
