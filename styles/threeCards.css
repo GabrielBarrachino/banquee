@@ -1,0 +1,70 @@
+.sThreeCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5.6rem;
+    margin-bottom: 5rem;
+}
+
+.sThreeCards .texts{
+    text-align: center;
+}
+
+.sThreeCards .texts span{
+    font-size: 1.6rem;
+}
+
+.sThreeCards .texts .titleSection{
+    margin-bottom: 2rem;
+}
+
+.sThreeCards .images{
+    width: 100%;
+    max-width: 40rem;
+    height: 40rem;
+}
+
+.sThreeCards .images img:not(:first-child){
+    margin-top: -15rem;
+    object-fit: contain;
+}
+
+.sThreeCards .buttons{
+    gap: 1.6rem;
+}
+
+.sThreeCards .buttons .btnBorder{
+    border: 1px solid rgba(27, 26, 31, 0.137);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.2rem 1.6rem;
+    border-radius: 6px;
+    transition: all .2s;
+}
+
+.sThreeCards .buttons .btnBorder:hover{
+    background: rgba(27, 26, 31, 0.075);
+    border-color: rgba(27, 26, 31, 0.075);
+}
+
+@media (max-width: 620px){
+    .sThreeCards .images{
+        max-width: 35rem;
+        height: 30rem;
+    }
+    .sThreeCards .images img:not(:first-child){
+        margin-top: -15rem;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 420px){
+    .sThreeCards .images{
+        max-width: 30rem;
+    }
+    .sThreeCards .images img:not(:first-child){
+        margin-top: -12rem;
+    }
+}
