@@ -1,0 +1,290 @@
+.sTestimonials{
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+}
+
+.sTestimonials .top{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+
+.sTestimonials .top .texts span{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.sTestimonials .top .texts .titleSection{
+    margin-bottom: 0;
+}
+
+.sTestimonials .top .ratedContent{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.sTestimonials .top .ratedContent .image{
+    background: rgba(90, 181, 161, 0.308);
+    border-radius: 50%;
+}
+
+.sTestimonials .top .ratedContent .image img{
+    padding: .9rem;
+}
+
+.sTestimonials .top .ratedContent span{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.sTestimonials .top .ratedContent span .number{
+    color: #5BB5A2;
+}
+
+.sTestimonials .opinionContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.2rem;
+}
+
+.sTestimonials .opinionContainer .opinionContent{
+    padding: 3.2rem;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    max-width: 37.8rem;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.sTestimonials .opinionContainer .contentMargin{
+    margin-top: -13rem;
+}
+
+.sTestimonials .opinionContainer .opinionContent .image{
+    gap: .4rem;
+    margin-bottom: .9rem;
+}
+
+.sTestimonials .opinionContainer .opinionContent .image img{
+    max-width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sTestimonials .opinionContainer .opinionContent .texts h3{
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.sTestimonials .opinionContainer .opinionContent .texts p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 170%;
+}
+
+.sTestimonials .opinionContainer .opinionContent .texts .name{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.sTestimonials .opinionContainer .opinionContent .texts span{
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: 0.8;
+    z-index: -200;
+}
+
+.sOneAppGreen{
+    height: 54.4rem;
+    border-radius: 10px;
+    background-color: #5BB5A2;
+    padding: 7.6rem 9.6rem;
+    align-items: start;
+    overflow: hidden;
+    margin-bottom: 16rem;
+}
+
+.sOneAppGreen .left h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 1.6rem;
+}
+
+.sOneAppGreen .left p{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+    max-width: 54rem;
+    width: 100%;
+    line-height: 150%;
+}
+
+.sOneAppGreen .left .tagsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.6rem;
+}
+
+.sOneAppGreen .left .tagsContainer .tags img{
+    max-width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.6rem;
+}
+
+.sOneAppGreen .left .tagsContainer .tags span{
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.sOneAppGreen .left .cardsDownload{
+    margin-top: 4.6rem;
+    gap: 2rem;
+}
+
+.sOneAppGreen .left .cardsDownload img{
+    max-width: 14.9rem;
+    height: 4.6rem;
+    object-fit: contain;
+}
+
+@media (max-width: 1130px){
+    .sTestimonials .opinionContainer{
+        grid-gap: 2rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent .texts h3{
+        font-size: 2rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent .texts p{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1070px){
+    .sOneAppGreen{
+        height: 49rem;
+    }
+}
+
+@media (max-width: 991px){
+    .sTestimonials .opinionContainer{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: start center;
+    }
+    .sTestimonials .opinionContainer .contentMargin{
+        margin-top: 0;
+    }
+    .sOneAppGreen{
+        height: 38rem;
+        max-width: 80rem;
+    }
+    .sOneAppGreen .left h3{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .sOneAppGreen .left p{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        max-width: 45rem;
+    }
+    .sOneAppGreen .left .tagsContainer .tags img{
+        max-width: 2rem;
+        height: 2rem;
+    }
+    .sOneAppGreen .left .tagsContainer .tags span{
+        font-size: 1.2rem;
+    }
+    .sOneAppGreen .left .cardsDownload{
+        margin-top: 2rem;
+    }
+    .sOneAppGreen .left .cardsDownload img{
+        max-width: 13rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 770px){
+    .sOneAppGreen .right{
+        display: none;
+    }
+    .sOneAppGreen{
+        max-width: 60rem;
+        justify-content: center;
+        text-align: center;
+        padding: 5rem 6rem;
+        margin-bottom: 10rem;
+    }
+    .sOneAppGreen .left .cardsDownload{
+        justify-content: center;
+    }
+    .sOneAppGreen .left .tagsContainer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem 0;
+    }
+}
+
+@media (max-width: 720px){
+    .sTestimonials .top{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .sTestimonials .top .ratedContent .image img{
+        padding: .8rem;
+        max-width: 4rem;
+        height: 3rem;
+    }
+    .sTestimonials .top .ratedContent span{
+        font-size: 1.4rem;
+    }
+    .sTestimonials .opinionContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px){
+    .sTestimonials{
+        margin-top: 12rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent{
+        padding: 2.6rem;
+        max-width: 35rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent .image img{
+        max-width: 1.3rem;
+        height: 1.3rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent .texts h3{
+        font-size: 2rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent .texts p{
+        font-size: 1.4rem;
+    }
+    .sTestimonials .opinionContainer .opinionContent .texts .name{
+        font-size: 1.6rem;
+    }
+    .sOneAppGreen{
+        max-width: 35rem;
+        padding: 5rem 3rem;
+    }
+    .sOneAppGreen .left h3{
+        font-size: 2.5rem;
+    }
+    .sOneAppGreen .left .tagsContainer .tags{
+        display: none;
+    }
+    .sOneAppGreen .left .cardsDownload{
+        flex-direction: column;
+    }
+    .sOneAppGreen .left .cardsDownload img{
+        max-width: 15rem;
+    }
+}

@@ -1,0 +1,151 @@
+.sHelpContainer{
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.sHelp{
+    align-items: start;
+    padding-bottom: 16rem;
+}
+
+.sHelp .left h4{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.sHelp .left .contacts{
+    margin-bottom: 4rem;
+}
+
+.sHelp .left .contacts .contactBox img{
+    max-width: 5rem;
+    height: 5rem;
+    margin-right: 1.2rem;
+}
+
+.sHelp .left .contacts .contactBox:not(:last-child){
+    margin-bottom: 2.4rem;
+}
+
+.sHelp .left .contacts .contactBox .dados{
+    max-width: 16rem;
+}
+
+.sHelp .left .contacts .contactBox .dados .number{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.sHelp .left .contacts .contactBox .dados .support{
+    font-size: 1.2rem;
+    color: rgba(27, 26, 31, 0.671);
+}
+
+.sHelp .left .allArticles span{
+    margin-right: .7rem;
+}
+
+.sHelp .right{
+    width: 100%;
+    max-width: 60rem;
+}
+
+.sHelp .right .accordion{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 2rem 0;
+}
+
+.sHelp .right .accordion .title{
+    cursor: pointer;
+    transition: all .4s;
+    padding: 2rem .8rem;
+    border-radius: 8px;
+}
+
+.sHelp .right .accordion.active .title{
+    padding: 2rem 0;
+}
+
+.sHelp .right .accordion .title:hover{
+    background-color: rgba(27, 26, 31, 0.048);
+}
+
+.sHelp .right .accordion .title h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.sHelp .right .accordion .title .image{
+    max-width: 2.4rem;
+    height: 2.4rem;
+}
+
+.sHelp .right .accordion.active .title .image img{
+    transform: rotate(224deg);
+}
+
+.sHelp .right .accordion p{
+    font-size: 1.4rem;
+    max-width: 60rem;
+    line-height: 170%;
+    color: rgba(27, 26, 31, 0.671);
+    margin-top: 1rem;
+    display: none;
+}
+
+.sHelp .right .accordion.active p{
+    display: block;
+    animation: fadeIn .4s forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media(max-width: 991px){
+    .sHelp{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 16rem;
+    }
+    .sHelp .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 500px){
+    .sHelp .left h4{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .sHelp .left .contacts{
+        margin-bottom: 2rem;
+    }
+    .sHelp .left .contacts .contactBox img{
+        max-width: 3.5rem;
+        height: 3.5rem;
+    }
+    .sHelp .right{
+        max-width: 40rem;
+    }    
+}
+
+@media(max-width: 460px){
+    .sHelp .left .allArticles {
+        display: flex;
+    }
+}
