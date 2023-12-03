@@ -92,6 +92,8 @@
     color: rgba(27, 26, 31, 0.671);
     margin-top: 1rem;
     display: none;
+    position: relative;
+    z-index: -200;
 }
 
 .sHelp .right .accordion.active p{
@@ -128,6 +130,9 @@
 }
 
 @media(max-width: 500px){
+    .sHelp{
+        padding-bottom: 10rem;
+    }
     .sHelp .left h4{
         font-size: 3rem;
         margin-bottom: 2rem;
