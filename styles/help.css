@@ -76,6 +76,10 @@
     font-weight: 500;
 }
 
+.sHelp .right .accordion.active .title h4{
+    color: #5BB5A2;
+}
+
 .sHelp .right .accordion .title .image{
     max-width: 2.4rem;
     height: 2.4rem;
@@ -117,7 +121,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-bottom: 16rem;
+        padding-bottom: 9rem;
     }
     .sHelp .left{
         display: flex;
