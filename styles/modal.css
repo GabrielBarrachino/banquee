@@ -166,8 +166,8 @@ input[type="checkbox"]{
 
 @media (max-width: 480px){
     .modalLogin .containerModal{
-        max-width: 30rem;
-        height: 53rem;
-        padding: 2rem;
+        max-width: 35rem;
+        height: 50rem;
+        padding: 1.4rem;
     }    
 }
