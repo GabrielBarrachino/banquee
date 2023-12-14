@@ -3,7 +3,7 @@
     --colorGreen: #5BB5A2;
 }
 
-.modalLogin{
+.modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +28,7 @@
     z-index: 0;
 }
 
-.modalLogin .containerModal{
+.modal .containerModal{
     position: relative;
     z-index: 1;
     width: 100%;
@@ -42,35 +42,45 @@
     align-items: center;
 }
 
-.modalLogin .containerModal .top{
+.modal .containerModalOpen{
+    height: 59rem;
+}
+
+.required{
+    color: #ee2c2ce1;
+    font-size: 1.5rem;
+    margin-left: .3rem;
+}
+
+.modal .containerModal .top{
     align-items: start;
 }
 
-.modalLogin .containerModal .top .text{
+.modal .containerModal .top .text{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.modalLogin .containerModal .top .text img{
+.modal .containerModal .top .text img{
     width: 4.8rem;
     height: 4.8rem;
     margin-bottom: 1.6rem;
 }
 
-.modalLogin .containerModal .top .text h4{
+.modal .containerModal .top .text h4{
     font-size: 1.6rem;
     margin-bottom: .6rem;
 }
 
-.modalLogin .containerModal .top .text p{
+.modal .containerModal .top .text p{
     font-size: 1.3rem;
     margin-bottom: 2rem;
     color: #475467b7;
 }
 
-.modalLogin .containerModal .btnClose{
+.modal .containerModal .btnClose{
     position: absolute;
     padding: .8rem;
     top: 1.5rem;
@@ -80,28 +90,28 @@
     border-radius: 50%;
 }
 
-.modalLogin .containerModal .btnClose:hover{
+.modal .containerModal .btnClose:hover{
     background-color: #f1abab65;
 }
 
-.modalLogin .containerModal form{
+.modal .containerModal form{
     width: 100%;
 }
 
-.modalLogin .containerModal .inputs{
+.modal .containerModal .inputs{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 3.2rem;
 }
 
-.modalLogin .containerModal .inputs .label{
+.modal .containerModal .inputs .label{
     font-size: 1.3rem;
     margin-bottom: .7rem;
     font-weight: 500;
 }
 
-.modalLogin .containerModal .inputs .input{
+.modal .containerModal .inputs .input{
     height: 4.4rem;
     border-radius: 8px;
     border: 1px solid #47546771;
@@ -111,25 +121,25 @@
     transition: all .1s;
 }
 
-.modalLogin .containerModal .inputs .input:focus{
+.modal .containerModal .inputs .input:focus{
     border: 2px solid var(--colorGreen);
 }
 
-.modalLogin .containerModal .inputs .inputPassword::placeholder{
+.modal .containerModal .inputs .inputPassword::placeholder{
     font-size: 4rem;
     color: #4754674d;
 }
 
-.modalLogin .containerModal .inputs .checkText{
+.modal .containerModal .inputs .checkText{
     font-size: 1.3rem;
     font-weight: 500;
     margin-top: 1rem;
 }
 
-.modalLogin .containerModal .inputs .checkText .checkBox{
+.modal .containerModal .inputs .checkText .checkBox{
     gap: .7rem;
 }
-.modalLogin .containerModal .inputs .checkText .checkBox label{
+.modal .containerModal .inputs .checkText .checkBox label{
     cursor: pointer;
 }
 
@@ -137,15 +147,15 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-.modalLogin .containerModal .inputs .checkText .forgot .password{
+.modal .containerModal .inputs .checkText .forgot .password{
     color: var(--colorGreen);
 }
 
-.modalLogin .containerModal form .buttons .btnOpen{
+.modal .containerModal form .buttons .btnOpen{
     width: 100%;
 }
 
-.modalLogin .containerModal form .buttons .btnCancel{
+.modal .containerModal form .buttons .btnCancel{
     margin-top: 1.2rem;
     background-color: transparent;
     border: 1px solid var(--colorGreen);
@@ -153,21 +163,29 @@ input[type="checkbox"]{
     transition: all .4s;
 }
 
-.modalLogin .containerModal form .buttons .btnCancel:hover{
+.modal .containerModal form .buttons .btnCancel:hover{
     border-color: rgba(90, 181, 161, 0.377);
     background-color: rgba(90, 181, 161, 0.377);
     color: #1A191E;
 }
 
-.showModal .modalLogin{
+.showModalLogin .modalLogin{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.showModalOpen .modalOpen{
     opacity: 1;
     pointer-events: all;
 }
 
 @media (max-width: 480px){
-    .modalLogin .containerModal{
+    .modal .containerModal{
         max-width: 35rem;
         height: 50rem;
         padding: 1.4rem;
-    }    
+    }
+    .modal .containerModalOpen{
+        height: 59rem;
+    }
 }

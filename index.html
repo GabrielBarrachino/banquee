@@ -79,7 +79,7 @@
 
                 <div class="buttons flex"> 
                     <button class="btn btnLogin" id="jsBtnLogin">Login</button>
-                    <button class="btn btnOpen">Open Account</button>
+                    <button class="btn btnOpen" id="jsBtnOpen">Open Account</button>
                 </div>
                 <button class="btnMobile" id="openMenu"><img src="./assets/menu.png" alt=""></button>
             </div>
@@ -292,15 +292,15 @@
 
             <div class="buttons flex"> 
                 <button class="btn btnLogin" id="jsBtnLoginMobile">Login</button>
-                <button class="btn btnOpen">Open Account</button>
+                <button class="btn btnOpen" id="jsBtnAccountMobile">Open Account</button>
             </div>
         </aside>
     </div>
 
-    <div class="modalLogin">
+    <div class="modal modalLogin">
         <div class="overlayModal" id="overlayModal"></div>
         <div class="containerModal container">
-            <button class="btnClose" id="jsBtnClose">
+            <button class="btnClose" id="jsBtnCloseLogin">
                 <img src="./assets/close.png" alt="">
             </button>
 
@@ -325,6 +325,47 @@
                         </div>
                         <div class="forgot">
                             <a href="#" class="password">Forgot Password</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btnOpen btnConfirm">Confirm</button>
+                    <button class="btnOpen btnCancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modalOpen">
+        <div class="overlayModal" id="jsCloseOverlayOpen"></div>
+        <div class="containerModal containerModalOpen container">
+            <button class="btnClose" id="jsBtnCloseOpen">
+                <img src="./assets/close.png" alt="">
+            </button>
+
+            <div class="top flex">
+                <div class="text">
+                    <img src="./favicon.svg" alt="">
+                    <h4>Sign up</h4>
+                    <p>Start your 30-day free trial.</p>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="inputs">
+                    <label for="name" class="label">Name<span class="required">*</span></label>
+                    <input type="text" id="name" placeholder="Enter your name" class="input" required>
+                    <label for="email" class="label">Email<span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="Enter your email" class="input" required>
+                    <label for="password" class="label">Password<span class="required">*</span></label>
+                    <input type="password" placeholder="....." class="input inputPassword" required>
+                    <div class="checkText flexBetween">
+                        <div class="checkBox flex">
+                            <input type="checkbox" id="checkbox" class="check">
+                            <label for="checkbox">I accept terms of use</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#" class="password">Terms of use</a>
                         </div>
                     </div>
                 </div>
