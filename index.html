@@ -19,7 +19,35 @@
     <link rel="stylesheet" href="styles/help.css">
     <link rel="stylesheet" href="styles/blog.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <title>Banquee | Home page</title>
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Finally you are in control of your money | Baanquee">
+    <meta property="og:url" content="https://baanqueee.vercel.app">
+    <meta property="og:description" content="With Baanquee your money goes further. Pay, receive payments and have a line of credit in one place. Download the app and open your free account.">
+    <meta property="og:image" content="https://baanqueee.vercel.app/bgShare.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt-br">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://baanqueee.vercel.app">
+    <meta property="twitter:title" content="Finally you are in control of your money | Baanquee">
+    <meta property="twitter:description" content="With Baanquee your money goes further. Pay, receive payments and have a line of credit in one place. Download the app and open your free account.">
+    <meta property="twitter:image" content="https://baanqueee.vercel.app">
+
+    <!-- Whatsapp -->
+    <meta property="whatsapp:card" content="summary_large_image">
+    <meta property="whatsapp:url" content="https://baanqueee.vercel.app">
+    <meta property="whatsapp:title" content="Finally you are in control of your money | Baanquee">
+    <meta property="whatsapp:description" content="With Baanquee your money goes further. Pay, receive payments and have a line of credit in one place. Download the app and open your free account.">
+    <meta property="whatsapp:image" content="https://baanqueee.vercel.app/bgShareWhats.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
 </head>
 <body>
     <header id="jsHeader">
@@ -51,7 +79,7 @@
                 </nav>
 
                 <div class="buttons flex"> 
-                    <button class="btn btnLogin">Login</button>
+                    <button class="btn btnLogin" id="jsBtnLogin">Login</button>
                     <button class="btn btnOpen">Open Account</button>
                 </div>
                 <button class="btnMobile" id="openMenu"><img src="./assets/menu.png" alt=""></button>
@@ -269,6 +297,45 @@
             </div>
         </aside>
     </div>
+
+    <!-- <div class="modalLogin">
+        <div class="overlayModal" id="overlayModal"></div>
+        <div class="containerModal container">
+            <button class="btnClose" id="jsBtnClose">
+                <img src="./assets/close.png" alt="">
+            </button>
+
+            <div class="top flex">
+                <div class="text">
+                    <img src="./favicon.svg" alt="">
+                    <h4>Log in to your account</h4>
+                    <p>Welcome back! Please enter your details.</p>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="inputs">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="input" required>
+                    <label for="password" class="label">Password</label>
+                    <input type="password" placeholder="....." class="input inputPassword" required>
+                    <div class="checkText flexBetween">
+                        <div class="checkBox flex">
+                            <input type="checkbox" id="checkbox" class="check">
+                            <label for="checkbox">Remember for 30 days</label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#" class="password">Forgot Password</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btnOpen btnConfirm">Confirm</button>
+                    <button class="btnOpen btnCancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
 
     <section class="sHome container">
         <div class="contentLeft">
@@ -820,5 +887,6 @@
     <script src="scripts/menus.js"></script>
     <script src="scripts/menusFixo.js"></script>
     <script src="scripts/accordion.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>
