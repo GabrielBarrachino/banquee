@@ -1,18 +1,24 @@
-const openModal = document.getElementById('jsBtnLogin');
-const closeModal = document.getElementById('jsBtnClose');
-const closeModalOverlay = document.getElementById('overlayModal');
+const openModalLogin = document.getElementById('jsBtnLogin');
+const closeModalLogin = document.getElementById('jsBtnClose');
+const closeModalOverlayLogin = document.getElementById('overlayModal');
+const openModalLoginMobile = document.getElementById('jsBtnLoginMobile');
 
-openModal.addEventListener('click', () => {
+openModalLogin.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.add('showModal')
 })
 
-closeModal.addEventListener('click', () => {
+openModalLoginMobile.addEventListener('click', () => {
+    let html = document.documentElement;
+    html.classList.add('showModal')
+})
+
+closeModalLogin.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.remove('showModal')
 })
 
-closeModalOverlay.addEventListener('click', () => {
+closeModalOverlayLogin.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.remove('showModal')
 })
