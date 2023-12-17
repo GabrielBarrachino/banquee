@@ -27,6 +27,8 @@ const openModalAccount = document.getElementById('jsBtnOpen')
 const closeModalAccount = document.getElementById('jsBtnCloseOpen')
 const closeModalOverlayAccount = document.getElementById('jsCloseOverlayOpen')
 const openModalAccountMobile = document.getElementById('jsBtnAccountMobile');
+const jsBtnAccountHome = document.getElementById('jsBtnAccountHome');
+const jsBtnAccountCards = document.getElementById('jsBtnAccountCards');
 
 openModalAccount.addEventListener('click', () => {
     let html = document.documentElement;
@@ -34,6 +36,16 @@ openModalAccount.addEventListener('click', () => {
 })
 
 openModalAccountMobile.addEventListener('click', () => {
+    let html = document.documentElement;
+    html.classList.add('showModalOpen')
+})
+
+jsBtnAccountHome.addEventListener('click', () => {
+    let html = document.documentElement;
+    html.classList.add('showModalOpen')
+})
+
+jsBtnAccountCards.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.add('showModalOpen')
 })
