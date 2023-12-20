@@ -10,14 +10,7 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/container.css">
     <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="../styles/oneapp.css">
-    <link rel="stylesheet" href="../styles/send.css">
-    <link rel="stylesheet" href="../styles/organize.css">
-    <link rel="stylesheet" href="../styles/threeCards.css">
-    <link rel="stylesheet" href="../styles/testimonials.css">
-    <link rel="stylesheet" href="../styles/help.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../styles/sFeatures.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/modal.css">
     <title>Banquee | Features</title>
@@ -53,14 +46,14 @@
         <div class="headerContainer">
             <div class="contentHeader flexBetween">
                 <div class="logo">
-                    <a href="#" title="Home page">
+                    <a href="/index.html" title="Home page">
                         <h4>banquee.</h4>
                     </a>
                 </div>
         
                 <nav>
                     <ul class="flex">
-                        <li><a href="./paginas/features.html" target="_blank">Features</a></li>
+                        <li><a href="#">Features</a></li>
                         <li class="menuHover">
                             <a href="#" target="_blank" class="flex">
                                 <span>Compare</span>
@@ -355,14 +348,16 @@
                 <div class="inputs">
                     <label for="name" class="label">Name<span class="required">*</span></label>
                     <input type="text" id="name" placeholder="Enter your name" class="input" required>
-                    <label for="email" class="label">Email<span class="required">*</span></label>
-                    <input type="email" id="email" placeholder="Enter your email" class="input" required>
+
+                    <label for="emailOpen" class="label">Email<span class="required">*</span></label>
+                    <input type="email" id="emailOpen" placeholder="Enter your email" class="input" required>
+
                     <label for="password" class="label">Password<span class="required">*</span></label>
                     <input type="password" placeholder="....." class="input inputPassword" required>
                     <div class="checkText flexBetween">
                         <div class="checkBox flex">
-                            <input type="checkbox" id="checkbox" class="check">
-                            <label for="checkbox">I accept terms of use</label>
+                            <input type="checkbox" id="checkboxOpen" class="check">
+                            <label for="checkboxOpen">I accept terms of use</label>
                         </div>
                         <div class="forgot">
                             <a href="#" class="password">Terms of use</a>
@@ -377,9 +372,33 @@
         </div>
     </div>
 
+    <section class="sFeatures">
+        <div class="container">
+            <div class="content">
+                <p class="titleFeatures">Features</p>
+                <h1 class="title">All in one card.</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsum dolor veniam ut unde asperiores nihil!</p>
+                <div class="buttons flex"> 
+                    <button class="btn btnOpen" id="jsBtnAccountHome">Open Account</button>
+                    <a href="#" class="allArticles flex">
+                        <span>Compare Cards</span>
+                        <img src="../assets/arrowRight.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../assets/cardGolden.svg" alt="" class="golden">
+            <img src="../assets/card.svg" alt="" class="black">
+            <img src="../assets/cardGreen.svg" alt="" class="green">
+            <img src="../assets/card.svg" alt="" class="black">
+            <img src="../assets/cardGolden.svg" alt="" class="golden">
+        </div>
+    </section>
+
+    <script src="../scripts/modal.js"></script>
     <script src="../scripts/menus.js"></script>
     <script src="../scripts/menusFixo.js"></script>
     <script src="../scripts/accordion.js"></script>
-    <script src="../scripts/modal.js"></script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+.sFeatures{
+    padding-top: 8rem;
+    background: rgba(91, 181, 162, 0.205);
+    height: 86.8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sFeatures .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12.8rem;
+    text-align: center;
+}
+
+.sFeatures .container .content .titleFeatures{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+}
+
+.sFeatures .container .content .title{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+
+.sFeatures .container .content .text{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+    line-height: 180%;
+}
+
+.sFeatures .container .content .buttons{
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.sFeatures .container .content .buttons .allArticles span{
+    margin-right: .8rem;
+}
+
+.sFeatures .cards{
+    display: flex;
+    justify-content: center;
+}
+
+.sFeatures .cards img{
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 50rem;
+    height: 27rem;
+    position: relative;
+}
+
+.sFeatures .cards .green{
+    top: 4rem;
+}
+
+.sFeatures .cards .golden{
+    top: 22rem;
+}
+
+.sFeatures .cards .black{
+    top: 12rem;
+}
+
+@media (max-width: 490px){
+    .sFeatures {
+        height: 71.8rem;
+    }
+    .sFeatures .container .content .title{
+        font-size: 3.5rem;
+    }
+    .sFeatures .container .content .text{
+        font-size: 1.4rem;
+        margin-bottom: 3.2rem;
+    }
+    .sFeatures .container {
+        margin-top: 4.8rem;
+    }
+    .sFeatures .cards img {
+        height: 21rem;
+    }
+}
+
+@media (max-width: 400px){
+    .sFeatures .container .content .text{
+        font-size: 1.2rem;
+    }
+    .sFeatures .container .content .buttons {
+        flex-direction: column;
+    }
+}

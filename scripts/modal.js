@@ -40,16 +40,6 @@ openModalAccountMobile.addEventListener('click', () => {
     html.classList.add('showModalOpen')
 })
 
-jsBtnAccountHome.addEventListener('click', () => {
-    let html = document.documentElement;
-    html.classList.add('showModalOpen')
-})
-
-jsBtnAccountCards.addEventListener('click', () => {
-    let html = document.documentElement;
-    html.classList.add('showModalOpen')
-})
-
 closeModalAccount.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.remove('showModalOpen')
@@ -58,4 +48,14 @@ closeModalAccount.addEventListener('click', () => {
 closeModalOverlayAccount.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.remove('showModalOpen')
+})
+
+jsBtnAccountHome.addEventListener('click', () => {
+    let html = document.documentElement;
+    html.classList.add('showModalOpen')
+})
+
+jsBtnAccountCards.addEventListener('click', () => {
+    let html = document.documentElement;
+    html.classList.add('showModalOpen')
 })
