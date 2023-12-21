@@ -1,0 +1,78 @@
+.sApps .appContainer{
+    margin: 16rem 0;
+}
+
+.sApps .appContainer .left .firstTitle{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.sApps .appContainer .left .title{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.sApps .appContainer .left .textDescription{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+    max-width: 50rem;
+    line-height: 150%;
+}
+
+.sApps .appContainer .left .tagsContainer .tags:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+
+.sApps .appContainer .left .tagsContainer .tags img{
+    max-width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .9rem;
+}
+
+.sApps .appContainer .left .tagsContainer .tags span{
+    font-size: 1.4rem;
+}
+
+.sApps .appContainer .right img{
+    max-width: 38rem;
+    height: 80rem;
+}
+
+@media (max-width: 991px){
+    .sApps .appContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 9rem;
+        text-align: center;
+    }
+    .sApps .appContainer .left .tagsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sApps .appContainer .left .tagsContainer .tags span{
+        text-align: start;
+        width: 19rem;
+    }
+}
+
+@media (max-width: 530px){
+    .sApps .appContainer{
+        margin: 10rem 0;
+    }
+    .sApps .appContainer .left .title{
+        font-size: 3rem;
+    }
+    .sApps .appContainer .left .textDescription{
+        font-size: 1.3rem;
+        font-weight: 500;
+        max-width: 40rem;
+    }
+    .sApps .appContainer .right img {
+        height: 57rem;
+    }
+}
