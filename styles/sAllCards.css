@@ -181,6 +181,7 @@
     }
     .sAllCards .bottom .topContainer .cardContainer .cards .green {
         top: 10rem;
+        border-radius: 10px;
     }
     .sAllCards .bottom .bottomContainer .cardContainer .image .logos {
         margin-top: 3.8rem;
