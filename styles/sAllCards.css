@@ -1,19 +1,19 @@
-.sAllCards{
+.sAllCards, .sChoose{
    margin-top: 16rem;
    margin-bottom: 16rem;
 }
 
-.sAllCards .top{
+.sAllCards .top, .sChoose .top{
     text-align: center;
 }
 
-.sAllCards .top .title{
+.sAllCards .top .title, .sChoose .top .title{
     font-size: 5rem;
     font-weight: 500;
     margin-bottom: 1.6rem;
 }
 
-.sAllCards .top .textDescription{
+.sAllCards .top .textDescription, .sChoose .top .textDescription{
     font-size: 1.6rem;
     font-weight: 400;
     margin: 0 auto;
@@ -142,9 +142,63 @@
     left: -2rem;
 }
 
+.sChoose .bottom{
+    margin-top: 9rem;
+}
+
+.sChoose .bottom .cardContainer{
+    width: 100%;
+    max-width: 35.7rem;
+    text-align: center;
+}
+
+.sChoose .bottom .cardContainer .text{
+    margin-bottom: 2.4rem;
+}
+
+.sChoose .bottom .cardContainer .text .basic{
+    gap: .8rem;
+    margin-bottom: .7rem;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sChoose .bottom .cardContainer .text .basic .greenSpan{
+    font-size: 1.2rem;
+    color: #5BB5A2;
+    background-color: rgba(101, 190, 171, 0.199);
+    padding: .8rem;
+    border-radius: 8px;
+}
+
+.sChoose .bottom .cardContainer .text h3{
+    font-size: 3.5rem;
+    margin-bottom: .8rem;
+}
+
+.sChoose .bottom .cardContainer .text p{
+    font-size: 1.6rem;
+    color: rgba(26, 25, 30, 0.589);
+    max-width: 22rem;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.sChoose .bottom .cardContainer .buttons .btn{
+    width: 100%;
+    margin-top: 2.4rem;
+}
+
 @media (max-width: 1170px){
     .sAllCards .bottom .topContainer .cardContainer .cards img{
         height: 17rem;
+    }
+}
+
+@media (max-width: 1120px){
+    .sChoose .bottom .cardContainer {
+        max-width: 30rem;
     }
 }
 
@@ -154,6 +208,11 @@
     }
     .sAllCards .bottom .bottomContainer {
         flex-direction: column;
+    }
+    .sChoose .bottom {
+        margin-top: 9rem;
+        flex-direction: column;
+        gap: 8rem;
     }
 }
 
@@ -194,6 +253,23 @@
     }
     .sAllCards .bottom .bottomContainer .cardContainer .image .transactionsImage{
         left: 0;
+    }
+    .sAllCards, .sChoose {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .sAllCards .top .title, .sChoose .top .title {
+        font-size: 3rem;
+    }
+    .sAllCards .top .textDescription, .sChoose .top .textDescription {
+        font-size: 1.4rem;
+        max-width: 30rem;
+    }
+    .sChoose .bottom {
+        margin-top: 6rem;
+    }
+    .sChoose .bottom .cardContainer .text h3 {
+        font-size: 2.7rem;
     }
 }
 
