@@ -1,0 +1,58 @@
+.sCompare{
+    background-color: #E8F2EE;
+    height: 58.2rem;
+    overflow: hidden;
+}
+
+.sCompare .container{
+    padding-top: 21.8rem;
+}
+
+.sCompare .container .left p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sCompare .container .left h1{
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+.sCompare .container .right{
+    position: relative;
+    top: 0;
+}
+
+@media (max-width: 991px){
+    .sCompare {
+        height: 41.2rem;
+    }
+    .sCompare .container{
+        padding-top: 14.8rem;
+    }
+    .sCompare .container .left h1 {
+        font-size: 5.5rem;
+    }
+    .sCompare .container .right img{
+        max-width: 37.4rem;
+    }
+}
+
+@media (max-width: 720px){
+    .sCompare{
+        height: 37.2rem;
+    }
+    .sCompare .container{
+        text-align: center;
+        justify-content: center;
+    }
+    .sCompare .container .right{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .sCompare .container .left h1 {
+        font-size: 4.5rem;
+    }
+}
