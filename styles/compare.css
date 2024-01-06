@@ -56,3 +56,98 @@
         font-size: 4.5rem;
     }
 }
+
+
+.creditTable .containerTable .title{
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.creditTable .containerTable .title h5{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 1.6rem;
+}
+
+.creditTable .containerTable .boxList .linesContent{
+    padding: 3.2rem 0;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.creditTable .containerTable .boxList .linesContent .boxTitle .image{
+    background-color: #E8F2EE;
+    border-radius: 50%;
+    padding: 1.1rem;
+    margin-right: 1.5rem;
+}
+
+.creditTable .containerTable .boxList .linesContent .boxTitle .image img{
+    max-width: 2.8rem;
+    height: 2.8rem;
+}
+
+.creditTable .containerTable .boxList .linesContent .boxTitle .text p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+.creditTable .containerTable .boxList .linesContent .boxTitle .text span{
+    font-size: 1.3rem;
+    color: rgba(26, 25, 30, 0.671);
+}
+
+.creditTable .containerTable .boxList .linesContent .column{
+    position: relative;
+    left: -6rem;
+}
+
+.creditTable .containerTable .boxList .linesContent .column1{
+    left: -3rem;
+}
+.creditTable .containerTable .boxList .linesContent .column2{
+    left: -.5rem;
+}
+.creditTable .containerTable .boxList .linesContent .column3{
+    left: -4rem;
+}
+.creditTable .containerTable .boxList .linesContent .column4{
+    left: -5rem;
+}
+.creditTable .containerTable .boxList .linesContent .column5{
+    left: -4.5rem;
+}
+.creditTable .containerTable .boxList .linesContent .column6{
+    left: -2.5rem;
+}
+.creditTable .containerTable .boxList .linesContent .column7{
+    left: -4rem;
+}
+.creditTable .containerTable .boxList .linesContent .column8{
+    left: -5.5rem;
+}
+
+.creditTable .containerTable .boxList .linesContent .column span{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.creditTable .containerMargin{
+    margin-top: 9.6rem;
+}
+
+@media (max-width: 680px){
+    .creditTable .containerTable .boxList .linesContent .boxTitle .image {
+        display: none;
+    }
+    .creditTable .containerTable .boxList .linesContent .column {
+        display: none;
+    }
+    .creditTable .containerTable .boxList .linesContent .columnBlock {
+        display: block;
+    }
+}
+
+@media (max-width: 425px){
+    .creditTable .containerTable .boxList .linesContent .boxTitle .text p {
+        font-size: 1.4rem;
+    }
+}
