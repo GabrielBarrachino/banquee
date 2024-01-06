@@ -150,4 +150,7 @@
     .creditTable .containerTable .boxList .linesContent .boxTitle .text p {
         font-size: 1.4rem;
     }
+    .creditTable .containerTable .boxList .linesContent .columnBLeft{
+        left: -5.3rem;
+    }
 }
