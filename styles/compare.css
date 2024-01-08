@@ -57,6 +57,9 @@
     }
 }
 
+.creditTable{
+    margin-bottom: 9.6rem;
+}
 
 .creditTable .containerTable .title{
     border-bottom: 2px solid #E8E8E8;
@@ -152,5 +155,75 @@
     }
     .creditTable .containerTable .boxList .linesContent .columnBLeft{
         left: -5.3rem;
+    }
+}
+
+.haveQuestion {
+    margin-bottom: 9.6rem;
+}
+
+.haveQuestion .boxGreen{
+    background-color: #5BB5A2;
+    color: #fff;
+    width: 100%;
+    max-width: 100rem;
+    height: 13rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3.2rem;
+}
+
+.haveQuestion .boxGreen .textContent h5{
+    font-size: 2rem;
+    margin-bottom: .6rem;
+}
+
+.haveQuestion .boxGreen .textContent .fontP{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.textH6{
+    font-size: 1.6rem;
+    margin-bottom: .6rem;
+}
+
+.image{
+    margin-right: 1.6rem;
+}
+
+.buttonContent .btnWithUs{
+    font-size: 1.4rem;
+    background-color: #1A191E;
+    color: #fff;
+    padding: 1.6rem 2.4rem;
+    border-radius: 6px;
+    transition: all .4s;
+}
+
+.buttonContent .btnWithUs:hover{
+    background-color: rgba(30, 29, 34, 0.801);
+}
+
+@media (max-width: 820px){
+    .haveQuestion .boxGreen .textContent h5{
+        font-size: 1.6rem;
+    }
+
+    .haveQuestion .boxGreen .textContent .image{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .haveQuestion .boxGreen{
+        flex-wrap: wrap;
+        height: 26rem;
+    }
+}
+
+@media (max-width: 390px){
+    .haveQuestion .boxGreen{
+        height: 41rem;
     }
 }
