@@ -226,4 +226,11 @@
     .haveQuestion .boxGreen{
         height: 41rem;
     }
+    .column, .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .columnBLeft, .columnBlock{
+        position: relative !important;
+        left: 0 !important;
+    }
+    .sChoose .bottom .cardContainer .image{
+        margin-right: 0px;
+    }
 }
