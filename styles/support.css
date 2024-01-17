@@ -1,0 +1,91 @@
+.haveQuestion{
+    margin-top: 9.6rem;
+}
+
+.sHelp {
+    padding-bottom: 0rem;
+}
+
+.paddingTop{
+    padding-top: 12rem;
+}
+
+.sCategoriesSupport {
+    align-items: start;
+    max-width: 100rem;
+    margin-bottom: 16rem;
+}
+
+.sCategoriesSupport .containerLeft {
+    width: 100%;
+    max-width: 23rem;
+    height: 21rem;
+    background-color: #1a191e0a;
+    border-radius: 8px;
+    padding: 3.2rem;
+    position: sticky;
+    top: 120px;
+}
+
+.sCategoriesSupport .containerLeft h6{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.sCategoriesSupport .containerLeft nav ul li:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.sCategoriesSupport .containerLeft nav ul li a{
+    font-size: 1.4rem;
+    color: #1a191e86;
+    font-weight: 600;
+}
+
+.sCategoriesSupport .containerRight .contentBox .titleSection{
+    margin-bottom: 4rem;
+}
+
+.sCategoriesSupport .containerRight .contentBox .titleSection .image{
+    max-width: 5rem;
+    height: 5rem;
+}
+
+.sCategoriesSupport .containerRight .contentBox .titleSection h6{
+    font-size: 2.5rem;
+}
+
+.sCategoriesSupport .containerRight .contentBox .sHelpContainer{
+    min-width: 60rem;
+}
+
+
+@media (max-width: 900px){
+    .sCategoriesSupport {
+        gap: 2rem;
+    }
+    .sCategoriesSupport .containerRight .contentBox .sHelpContainer {
+        min-width: initial;
+    }
+}
+@media (max-width: 650px){
+    .sCategoriesSupport .containerLeft {
+        display: none;
+    }
+    .sCategoriesSupport {
+        margin-bottom: 10rem;
+    }
+}
+@media (max-width: 470px){
+    .sCategoriesSupport .containerRight .contentBox .titleSection .image {
+        max-width: 3.5rem;
+        height: 3.5rem;
+    }
+    .sCategoriesSupport .containerRight .contentBox .titleSection h6 {
+        font-size: 2rem;
+    }
+    .sCategoriesSupport .containerRight .contentBox .titleSection {
+        margin-bottom: 2rem;
+    }
+}
