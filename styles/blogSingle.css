@@ -1,0 +1,152 @@
+.mainBlogSingle{
+    padding-top: 18.7rem;
+    margin-bottom: 16rem;
+}
+
+.mainBlogSingle .textTop{
+    text-align: center;
+}
+
+.mainBlogSingle .textTop .tagAppGreen{
+    font-size: 1.4rem;
+    background-color: #E8F2EE;
+    color: #5BB5A2;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainBlogSingle .textTop h1{
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 1.5rem 0 3.2rem 0;
+}
+
+.mainBlogSingle .textTop p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.mainBlogSingle .image{
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mainBlogSingle .image img{
+    max-width: 100rem;
+    height: 60rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.mainBlogSingle .textContent{
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.mainBlogSingle .textContent .boxConteudo{
+    margin-bottom: 3.2rem;
+}
+
+.mainBlogSingle .textContent .boxConteudo h5{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.mainBlogSingle .textContent .boxConteudo p{
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.mainBlogSingle .textContent .boxConteudo p:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.mainBlogSingle .midiaSocial{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainBlogSingle .midiaSocial span{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainBlogSingle .midiaSocial .linksSocial{
+    gap: 1.6rem;
+}
+
+.mainBlogSingle .midiaSocial .linksSocial .btnLink{
+    background-color: #E8F2EE;
+    padding: 1.2rem;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.mainBlogSingle .midiaSocial .linksSocial .btnLink:hover{
+    background-color: rgb(202, 206, 204);
+}
+
+.mainBlogSingle .midiaSocial .linksSocial .btnLink img{
+    height: 2.5rem;
+}
+
+@media (max-width: 800px){
+    .mainBlogSingle .textTop h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin: 1.5rem 0 2.2rem 0;
+    }
+    .mainBlogSingle .textTop p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 160%;
+    }
+    .mainBlogSingle .image img{
+        height: 40rem;
+    }
+}
+
+@media (max-width: 540px){
+    .mainBlogSingle {
+        padding-top: 12.7rem;
+    }
+    .mainBlogSingle .textTop h1 {
+        font-size: 2.5rem;
+    }
+    .mainBlogSingle .textTop p {
+        font-size: 1.2rem;
+    }
+    .mainBlogSingle .textTop p br, .mainBlogSingle .textTop h1 br{
+        display: none;
+    }
+    .mainBlogSingle .textTop .tagAppGreen {
+        padding: 0.7rem 1.2rem;
+    }
+    .mainBlogSingle .image img{
+        height: 25rem;
+    }
+    .mainBlogSingle .textContent .boxConteudo h5 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .mainBlogSingle .textContent .boxConteudo p {
+        font-size: 1.3rem;
+    }
+    .mainBlogSingle .midiaSocial .linksSocial .btnLink{
+        padding: 1rem;
+    }
+    .mainBlogSingle .midiaSocial .linksSocial .btnLink img{
+        height: 2rem;
+    }
+    .mainBlogSingle{
+        margin-bottom: 10rem;
+    }    
+}
