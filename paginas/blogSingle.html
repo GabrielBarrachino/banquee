@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../styles/compare.css">
     <link rel="stylesheet" href="../styles/support.css">
     <link rel="stylesheet" href="../styles/Sblog.css">
-    <title>Banquee | Blog</title>
+    <title>Banquee | Blog Article</title>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -379,99 +379,9 @@
         </div>
     </div>
 
-    <section class="sBlog container">
-        <h1 class="title">Blog</h1>
-    </section>
+    
 
-    <section class="allBlog container">
-        <div class="top flex">
-            <p class="tagCategorie">Categories</p>
-            <nav>
-                <ul class="ulCategories flex">
-                    <li class="current"><button class="btnCategorie">All</button></li>
-                    <li><button class="btnCategorie">Products</button></li>
-                    <li><button class="btnCategorie">Technology</button></li>
-                    <li><button class="btnCategorie">App</button></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="bottom">
-            <a href="./blogSingle.html" class="boxBlog" target="_blank" data-filter="app">
-                <div class="image">
-                    <img src="../assets/imageBlog1.svg" alt="">
-                </div>
-                <div class="textContent">
-                    <h3>How To Start Using Banko For Your Startup</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</p>
-                    <div class="tags flex">
-                        <span>App</span>
-                    </div>
-                </div>
-            </a>
-            <a href="./blogSingle.html" class="boxBlog" target="_blank" data-filter="technology">
-                <div class="image">
-                    <img src="../assets/imageBlog2.svg" alt="">
-                </div>
-                <div class="textContent">
-                    <h3>10 Things Nobody Told You About Banko</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</p>
-                    <div class="tags flex">
-                        <span>Technology</span>
-                    </div>
-                </div>
-            </a>
-            <a href="./blogSingle.html" class="boxBlog" target="_blank" data-filter="products">
-                <div class="image">
-                    <img src="../assets/imageBlog3.svg" alt="">
-                </div>
-                <div class="textContent">
-                    <h3>How To Start Using Banko For Your Startup</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</p>
-                    <div class="tags flex">
-                        <span>Product</span>
-                    </div>
-                </div>
-            </a>
-            <a href="./blogSingle.html" class="boxBlog" target="_blank" data-filter="products">
-                <div class="image">
-                    <img src="../assets/imageBlog4.svg" alt="">
-                </div>
-                <div class="textContent">
-                    <h3>Why We Love Banko (And You Should, Too!)</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</p>
-                    <div class="tags flex">
-                        <span>Product</span>
-                    </div>
-                </div>
-            </a>
-            <a href="./blogSingle.html" class="boxBlog" target="_blank" data-filter="app">
-                <div class="image">
-                    <img src="../assets/imageBlog5.svg" alt="">
-                </div>
-                <div class="textContent">
-                    <h3>5 Principles Of Crypto Investing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</p>
-                    <div class="tags flex">
-                        <span>App</span>
-                    </div>
-                </div>
-            </a>
-            <a href="./blogSingle.html" class="boxBlog" target="_blank" data-filter="technology">
-                <div class="image">
-                    <img src="../assets/imageBlog6.svg" alt="">
-                </div>
-                <div class="textContent">
-                    <h3>7 Things About Banko Your Friends Want To Know</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</p>
-                    <div class="tags flex">
-                        <span>Technology</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <footer>
+    <!-- <footer>
         <div class="top flexBetween container">
             <div class="logo">
                 <a href="#" title="Home page">
@@ -526,33 +436,10 @@
                 <span>Datenschutz</span>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="../scripts/modal.js"></script>
     <script src="../scripts/menus.js"></script>
     <script src="../scripts/menusFixo.js"></script>
-    <script src="../scripts/accordion.js"></script>
-
-    <script>
-        const liProduct = document.querySelectorAll('nav ul li');
-        const boxBlog = document.querySelectorAll('.boxBlog');
-
-        liProduct.forEach(li => {
-            li.onclick = function () {
-                liProduct.forEach(li => {
-                    li.className = "";
-                })
-                li.className = "current"
-
-                const value = li.textContent;
-                boxBlog.forEach(boxBlog => {
-                    boxBlog.style.display = 'none'
-                    if(boxBlog.getAttribute('data-filter') == value.toLowerCase() || value == "All"){
-                        boxBlog.style.display = "block"
-                    }
-                })
-            }
-        })
-    </script>
 </body>
 </html>
