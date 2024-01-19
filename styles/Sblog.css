@@ -1,0 +1,130 @@
+.sBlog{
+    padding: 18.7rem 0 9.6rem 0;
+}
+
+.sBlog .title{
+    font-size: 9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.allBlog{
+    margin-bottom: 16rem;
+}
+
+.allBlog .top{
+    margin-bottom: 6.4rem;
+}
+
+.allBlog .top .tagCategorie{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-right: 3.2rem;
+}
+
+.allBlog .top .ulCategories{
+    gap: 1.6rem;
+}
+
+.allBlog .top .ulCategories .btnCategorie, .allBlog .bottom .boxBlog .textContent .tags span{
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 1rem 1.3rem;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.allBlog .top .ulCategories .btnCategorie:hover{
+    background-color: rgba(211, 211, 211, 0.425)
+}
+
+.allBlog .bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.3rem 5rem;
+}
+
+.allBlog .bottom .boxBlog{
+    width: 100%;
+    max-width: 37.8rem;
+}
+
+.allBlog .bottom .boxBlog .image{
+    margin-bottom: 2.4rem;
+}
+
+.allBlog .bottom .boxBlog .textContent h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+.allBlog .bottom .boxBlog .textContent p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.allBlog .bottom .boxBlog .textContent .tags{
+    margin-top: 2.4rem;
+    gap: .8rem;
+}
+
+@media (max-width: 991px){
+    .allBlog .bottom{
+        gap: 3.3rem 2rem;
+    }
+}
+
+@media (max-width: 800px){
+    .allBlog .top {
+        justify-content: center;
+    }
+    .allBlog .bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .sBlog {
+        padding: 11.7rem 0 8.6rem 0;
+    }
+    .sBlog .title {
+        font-size: 7rem;
+    }    
+    .allBlog .top {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .allBlog .bottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    .allBlog .bottom .boxBlog .image img{
+        height: 30rem;
+        border-radius: 15px;
+        width: 100%;
+    }
+    .allBlog{
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 490px){
+    .allBlog .top {
+        gap: 2rem;
+    }
+    .allBlog .top .tagCategorie {
+        margin-right: 0;
+    }
+    .allBlog .bottom .boxBlog .image img{
+        height: 20rem;
+    }
+}
+
+@media (max-width: 370px){
+    .allBlog .top .ulCategories {
+        flex-wrap: wrap;
+    }
+}
