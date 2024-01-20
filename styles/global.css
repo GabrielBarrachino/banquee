@@ -123,3 +123,7 @@ button{
 .allArticles:hover img{
     transform: translateX(30%);
 }
+
+.underlineLink{
+    text-decoration: underline;
+}

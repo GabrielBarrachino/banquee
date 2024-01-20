@@ -128,7 +128,7 @@ header{
     width: 100%;
 }
 
-.headerContainer .submenuBlog .navLeft h5, .headerContainer .submenuBlog .navRight h5{
+.headerContainer .submenuBlog .navLeft h2, .headerContainer .submenuBlog .navRight h2{
     font-size: 1.8rem;
     margin-bottom: 3.2rem;
 }
@@ -195,7 +195,7 @@ header{
     margin-right: 2.4rem;
 }
 
-.headerContainer .submenuBlog .navRight .articlesContent .boxArticle a .texts h4{
+.headerContainer .submenuBlog .navRight .articlesContent .boxArticle a .texts h3{
     font-size: 1.8rem;
     font-weight: 500;
 }
