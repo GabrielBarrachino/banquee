@@ -164,8 +164,8 @@ input[type="checkbox"]{
 }
 
 .modal .containerModal form .buttons .btnCancel:hover{
-    border-color: rgba(90, 181, 161, 0.377);
-    background-color: rgba(90, 181, 161, 0.377);
+    border-color: #f1abab65;
+    background-color: #f1abab65;
     color: #1A191E;
 }
 

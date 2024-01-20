@@ -2,6 +2,7 @@ const openModalLogin = document.getElementById('jsBtnLogin');
 const closeModalLogin = document.getElementById('jsBtnCloseLogin');
 const closeModalOverlayLogin = document.getElementById('overlayModal');
 const openModalLoginMobile = document.getElementById('jsBtnLoginMobile');
+const cancelLoginBtn = document.getElementById('cancelLoginBtn')
 
 openModalLogin.addEventListener('click', () => {
     let html = document.documentElement;
@@ -23,12 +24,19 @@ closeModalOverlayLogin.addEventListener('click', () => {
     html.classList.remove('showModalLogin')
 })
 
+cancelLoginBtn.addEventListener('click', (event) => {
+    event.preventDefault()
+    let html = document.documentElement;
+    html.classList.remove('showModalLogin')
+})
+
 const openModalAccount = document.getElementById('jsBtnOpen')
 const closeModalAccount = document.getElementById('jsBtnCloseOpen')
 const closeModalOverlayAccount = document.getElementById('jsCloseOverlayOpen')
 const openModalAccountMobile = document.getElementById('jsBtnAccountMobile');
 const jsBtnAccountHome = document.getElementById('jsBtnAccountHome');
 const jsBtnAccountCards = document.getElementById('jsBtnAccountCards');
+const cancelOpenBtn = document.getElementById('cancelOpenBtn');
 
 openModalAccount.addEventListener('click', () => {
     let html = document.documentElement;
@@ -58,4 +66,10 @@ jsBtnAccountHome.addEventListener('click', () => {
 jsBtnAccountCards.addEventListener('click', () => {
     let html = document.documentElement;
     html.classList.add('showModalOpen')
+})
+
+cancelOpenBtn.addEventListener('click', (event) => {
+    event.preventDefault()
+    let html = document.documentElement;
+    html.classList.remove('showModalOpen')
 })
